@@ -45,48 +45,20 @@ elFormFizz.addEventListener("submit", function(evt){
 
 // 3 vazifa
 
-var elForm = document.querySelector(".site-form");
+var elDollarForm = document.querySelector(".site-dollar-form");
 
-var elUserMoney = document.querySelector(".site-input");
+var elUserMoney = document.querySelector(".site-dollar-input");
 var elAllSum = document.querySelector(".cost");
 var elSelect = document.querySelector(".site-select");
 
-elForm.addEventListener("submit", function(evt){
+elDollarForm.addEventListener("submit", function(evt){
     evt.preventDefault()
     var elCostMoney = elUserMoney.value * elSelect.value;
     elAllSum.textContent = elCostMoney;
 })
 
 
-
-// 4-vazifa
-// var elFindForm = document.querySelector(".find-form");
-// var elFindInput = elFindForm.querySelector(".find-input");
-// var elFindStep = document.querySelector(".step");
-// var elFindAlert = document.querySelector(".find-alert");
-// var elFindResult = document.querySelector(".find-result");
-// var elFindStepNum = 6;
-
-
-// elFindForm.addEventListener("submit", function(evt){
-//     evt.preventDefault()
-//     var computerChoice = Math.round(Math.random() * 1000)
-//     var findInputValue = elFindInput.value;
-//     var findStepValue = elFindStep.value;
-//     var findAlertValue = elFindAlert.value;
-
-//     if (computerChoice != findInputValue && findInputValue < computerChoice){
-//         findStepValue.textContent = elFindStepNum - 1;
-//         findAlertValue.textContent = "son x sondan kichik";
-//     } else if (elRendom != findInputValue && findInputValue > elRendom){
-//         findStepValue.textContent = elFindStepNum - 1;
-//         findAlertValue.textContent = "son x sondan kotta";
-//     } else {
-
-//     }
-//     elFindInput.value = ""
-
-// })
+// 4 vazifa
 
 var elFindInput = document.querySelector(".find-input")
 var elFindForm = document.querySelector(".find-form")

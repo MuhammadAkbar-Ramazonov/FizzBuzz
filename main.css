@@ -1,7 +1,0 @@
-.find-form .disabled {
-    opacity: 0.25;
-    background-color: #e9ecef;
-    cursor: default;
-    color: -internal-light-dark(rgb(84, 84, 84), rgb(170, 170, 170));
-    border-color: rgba(118, 118, 118, 0.3);
-}
