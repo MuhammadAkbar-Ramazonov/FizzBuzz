@@ -78,19 +78,17 @@ elFindForm.addEventListener("submit", function(evt){
     elFindInput.value = ""
     elFindStep.textContent = `${elFindStepNum} ta urinish qoldi`
     if(elRandom == findInputValue){
-        elFindResult.textContent = "Yutdingiz, winner!"
+        elFindResult.textContent = "WIN"
         elFindInput.setAttribute("disabled", "")
         randomBtn.setAttribute("disabled", "")
     } else if(elFindStepNum === 0 && elRandom != findInputValue){
-        elFindResult.textContent = "TUGADI"
+        elFindResult.textContent = "LOSE"
         elFindResult.classList.add("bg-danger")
         elFindInput.setAttribute("disabled","")
         randomBtn.setAttribute("disabled","")
     }  else if(elRandom != findInputValue && findInputValue > elRandom){
-        elFindResult.textContent = "Kalla qo'ydingiz, loser!"
         elFindAlert.textContent = "son x sondan katta";
     } else if(elRandom != findInputValue && findInputValue < elRandom){
-        elFindResult.textContent = "Kalla qo'ydingiz, loser!"
         elFindAlert.textContent = "son x sondan kichik";
     }
 })
